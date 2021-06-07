@@ -1,3 +1,8 @@
+[metadata.heroku]
+    root-package = "my_heroku_app"
+    go-version = "go1.13"
+    install = ["./..."]
+
 # Gopkg.toml example
 #
 # Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
