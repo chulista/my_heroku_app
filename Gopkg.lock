@@ -9,9 +9,32 @@
   revision = "98cb6bf42e086f6af920b965c38cacc07402d51b"
   version = "v1.8.0"
 
+[[projects]]
+  digest = "1:819b22a75ddd43c69965c9582dcab34a077f2d3f543bf8832126b275ea6953e6"
+  name = "github.com/sirupsen/logrus"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "bdc0db8ead3853c56b7cd1ac2ba4e11b47d7da6b"
+  version = "v1.8.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:5d32614e7920dab5be3a6c3024bea73679f87dc1857a140a634ef1622a5cde82"
+  name = "golang.org/x/sys"
+  packages = [
+    "internal/unsafeheader",
+    "unix",
+    "windows",
+  ]
+  pruneopts = "UT"
+  revision = "59db8d763f22395595c26ee1cae0886b57141b3a"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/gorilla/mux"]
+  input-imports = [
+    "github.com/gorilla/mux",
+    "github.com/sirupsen/logrus",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -3,6 +3,7 @@ package src
 import (
 	"fmt"
 	"github.com/gorilla/mux"
+	"my_heroku_app/src/tools"
 	"net/http"
 )
 
@@ -28,5 +29,6 @@ func NewRouter() *mux.Router {
 }
 
 func Ping(w http.ResponseWriter, r *http.Request) {
+	tools.Log()
 	fmt.Fprintf(w, "pong")
 }
